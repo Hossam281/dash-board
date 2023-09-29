@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle {
+    width: 35px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+  
+  .slider {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.25px;
+    transition: 0.3s;
+    display: inline-block;
+  }
+  
+  .on .slider {
+    transform: translateX(16px);
+  }
+  
+  .off .slider {
+    transform: translateX(2px);
+  }
+
+  .on.toggle{
+    background-color: #6cc070	;
+    
+  }
